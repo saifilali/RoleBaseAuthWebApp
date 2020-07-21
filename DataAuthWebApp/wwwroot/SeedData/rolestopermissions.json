@@ -1,0 +1,7 @@
+[
+  {
+    "RoleName": "Dummy",
+    "Description": "Permissions not used in RoleBaseAuthWebApp",
+    "Permissions": [ "DataAuthPermission" ]
+  }
+]

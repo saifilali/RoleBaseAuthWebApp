@@ -1,0 +1,59 @@
+﻿@using StartupCode
+@model TestWebApp.DisplayCode.HomePageDto
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h2>Welcome to SelecTransportation Role Base Authorization App</h2>
+<p>
+    This is an example ASP.NET Core web application to show how you can implement a roles-to-permissions authorization system.
+    This application uses in-memory database to allow you to easily run the application (it seeds the database on startup)
+</p>
+
+
+<strong>NOTE:</strong> the @Html.ActionLink("ColorController", "Index", "Color")  and the @Html.ActionLink("Feature1Controller", "Index", "Feature1")
+    are protected by Permissions, so try accessing them either of those when not logged in,
+    or logged in as user Staff@g1.com or Manager@g1.com.
+</p>
+
+
+<h3>List of users <small>so you can log in</small> </h3>
+<p>NOTE: The Email address is also the Password!</p>
+<table class="table">
+    <tr>
+        <th>User Email</th>
+        <th>Roles</th>
+        <th>Allowed Modules</th>
+    </tr>
+    @foreach (var user in @Model.User)
+    {
+        <tr>
+            <td>@user.Email</td>
+            <td>@user.RoleNames</td>
+            <td>@user.ModuleNames</td>
+        </tr>
+    }
+</table>
+
+@*<h3>List of roles, with their permission<small>, but remember that the permissions are filtered by what modules the user is allowed to access</small></h3>
+    <table class="table">
+        <tr>
+            <th>RoleName</th>
+            <th>Has permission</th>
+            <th>Permission description</th>
+            <th>Optional Module link</th>
+        </tr>
+        @foreach (var roleData in @Model.Roles)
+
+        {
+            for (int i = 0; i < roleData.PermissionsWithDesc.Count; i++ )
+            {
+                <tr>
+                    <td>@(i == 0 ? roleData.RoleName : "")</td>
+                    <td>@roleData.PermissionsWithDesc[i].PermissionName</td>
+                    <td>@roleData.PermissionsWithDesc[i].Description</td>
+                    <td>@roleData.PermissionsWithDesc[i].LinkedToModule</td>
+                </tr>
+            }
+        }
+    </table>*@

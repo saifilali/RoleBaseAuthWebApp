@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model List<DataAuthWebApp.DisplayCode.UserListDto>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h2>Welcome to SelecTransportation Role Base Authorization App</h2>
+
+<p>
+    This is an example ASP.NET Core web application to show how you can implement per-row data protection.
+    This application uses in-memory database to allow you to easily run the application (it seeds the database on startup)
+</p>
+
+<h3>List of users <small>so you can log in</small> </h3>
+<p>NOTE: The Email address is also the Password!</p>
+<table class="table">
+    <tr>
+        <th>User Email</th>
+        <th>IsDistrictManager?</th>
+        <th>Linked shops</th>
+    </tr>
+    @foreach (var user in @Model)
+    {
+        <tr>
+            <td>@user.Email</td>
+            <td>@user.IsDistrictManager</td>
+            <td>@user.ShopNames</td>
+        </tr>
+    }
+</table>
