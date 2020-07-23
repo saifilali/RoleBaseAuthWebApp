@@ -2,9 +2,9 @@
 
 It contains a ASP.NET Core applications with extra code to implement feature or data authorization. All the ASP.NET Core applications use in-memory databases which are seeded on startup so it should run anywhere.
 
-Here is a example of the first application, [TestWebApp](https://github.com/JonPSmith/saifilali/RoleBaseAuthWebApp/tree/master/TestWebApp), that covers feature authorization.
+Here is a example of the first application, [TestWebApp](https://github.com/saifilali/RoleBaseAuthWebApp/tree/master/TestWebApp), that covers feature authorization.
 
-![permission access](https://github.com/JonPSmith/PermissionAccessControl/blob/master/PermissionAccessControlHomePage.png)
+![permission access](https://github.com/saifilali/RoleBaseAuthWebApp/blob/master/PermissionAccessControlHomePage.png)
 
 ## Feature authorization
 
