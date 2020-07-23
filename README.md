@@ -1,24 +1,14 @@
-# PermissionAccessControl
-
-This is a GitHub repo containing example code that goes with two articles
-- [A better way to handle authorization in ASP.NET Core](https://www.thereformedprogrammer.net/a-better-way-to-handle-authorization-in-asp-net-core/).
-- [Handling data authorization ASP.NET Core and Entity Framework Core](https://www.thereformedprogrammer.net/part-2-handling-data-authorization-asp-net-core-and-entity-framework-core/)
+# RoleBaseAuthApp
 
 It contains a ASP.NET Core applications with extra code to implement feature or data authorization. All the ASP.NET Core applications use in-memory databases which are seeded on startup so it should run anywhere.
 
-MIT licence.
-
-Here is a example of the first application, [TestWebApp](https://github.com/JonPSmith/PermissionAccessControl/tree/master/TestWebApp), that covers feature authorization.
+Here is a example of the first application, [TestWebApp](https://github.com/JonPSmith/saifilali/RoleBaseAuthWebApp/tree/master/TestWebApp), that covers feature authorization.
 
 ![permission access](https://github.com/JonPSmith/PermissionAccessControl/blob/master/PermissionAccessControlHomePage.png)
 
 ## Feature authorization
 
-The [TestWebApp](https://github.com/JonPSmith/PermissionAccessControl/tree/master/TestWebApp)
-is the application you can run to try out the feature authorization code in the article
-[A better way to handle authorization in ASP.NET Core](https://www.thereformedprogrammer.net/a-better-way-to-handle-authorization-in-asp-net-core/).
-
-Select the [TestWebApp](https://github.com/JonPSmith/PermissionAccessControl/tree/master/TestWebApp)
+Select the [TestWebApp](https://github.com/saifilali/RoleBaseAuthWebApp/tree/master/TestWebApp)
 as your startup application. When you run it you will see a list of users that you can log in as.
 Here are some comments on these:
 
@@ -31,11 +21,7 @@ Here are some comments on these:
 
 ## Data authorization
 
-The [DataAuthWebApp](https://github.com/JonPSmith/PermissionAccessControl/tree/master/DataAuthWebApp) 
-is the application you can run to try out the data authorization code in the article
-[Handling data authorization ASP.NET Core and Entity Framework Core](https://www.thereformedprogrammer.net/part-2-handling-data-authorization-asp-net-core-and-entity-framework-core/).
-
-Select the [DataAuthWebApp](https://github.com/JonPSmith/PermissionAccessControl/tree/master/DataAuthWebApp)
+Select the [DataAuthWebApp](https://github.com/saifilali/RoleBaseAuthWebApp/tree/master/DataAuthWebApp)
 as your startup application. When you run it you will see a list of users that you can log in as.
 Here are some comments on these:
 
